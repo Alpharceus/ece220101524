@@ -35,7 +35,7 @@ if name and selected_major:
     major_data = df[df['Major'] == selected_major].sort_values(by='Rank').head(10)
 
     # Step 4: Display a greeting message
-    st.write(f"Hello {name}, he is the top university for {selected_major}:")
+    st.write(f"Hello {name}, here is the top university for {selected_major}:")
 
     # Step 5: Display the results in a table format
     st.table(major_data[['Rank', 'University']])
